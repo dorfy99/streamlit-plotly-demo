@@ -20,4 +20,11 @@ fig.add_trace(go.Scatter(x=x, y=y1, mode='lines', name='Gerade 1'))
 fig.add_trace(go.Scatter(x=x, y=y2, mode='lines', name='Gerade 2'))
 fig.update_layout(title='Zwei Geraden', xaxis_title='x', yaxis_title='y')
 
+fig.update_layout(
+    title='Zwei Geraden (aktualisiert)',
+    xaxis_title='X-Achse',
+    yaxis_title='Y-Achse',
+    legend_title='Legende'
+)
+
 st.plotly_chart(fig)
